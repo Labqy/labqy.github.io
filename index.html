@@ -1,50 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-	<title>Muhamad Iqbal</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="img/icon.ico">
-	<style type="text/css">
-		body {
-			font-family: arial;
-			text-align: center;
-		}
-		a:link {color:white; text-decoration: none;}
-		a:visited {color:white;}
-		a:hover {color:pink; text-decoration: none;}
-		a:active {color:skyblue;}
-		.logo {
-			margin-top: 70px;
-		}
-		.menu {
-			text-align: center;
-			font-size: 30px;
-			padding: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Iqbal - Links</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-			color: white;
-			border-radius: 10px;
-			background-color: #001538;
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f7f9 0%, #e1e8ed 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            padding: 40px 20px;
+        }
 
-		}
-	</style>
+        .container {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            /* Animasi Fade In */
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .logo img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #001538;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 { 
+            color: #001538; 
+            font-size: 28px;
+            margin-bottom: 8px; 
+        }
+        
+        p { 
+            color: #555; 
+            font-size: 16px;
+            margin-bottom: 35px; 
+            letter-spacing: 0.5px;
+        }
+
+        .menu {
+            display: block;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 16px;
+            margin-bottom: 15px;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 15px;
+            background-color: #001538;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+        }
+
+        .menu:hover {
+            background-color: #002a70;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+            color: #ffffff !important; 
+        }
+
+        .menu:active {
+            transform: translateY(-1px);
+        }
+
+        .btn-donasi {
+            background-color: #eb314a;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-	<div class="logo">
-		<img src="img/iqbal.jpg"  style="width:200px;height:200px;border-radius:50%;">
-	</div>
-	<h1>Muhamad Iqbal</h1>
-	<p>Halaman Pranala Pribadi Muhamad Iqbal</p>
-	<a href="cv" target="_blank"><div class="menu">Curriculum Vitae</div></a>
-	<br>
-	<a href="port" target="_blank"><div class="menu">Portofolio</div></a>
-	<br>
-	<a href="https://quinime.my.id/" target="_blank"><div class="menu">Website</div></a>
-	<br>
-	<a href="https://www.instagram.com/labqy_/" target="_blank"><div class="menu">Instagram</div></a>
-	<br>
-	<a href="https://www.facebook.com/labqy" target="_blank"><div class="menu">Facebook</div></a>
-	<br>
-	<a href="https://x.com/Labqy_" target="_blank"><div class="menu">X</div></a>
-	<br>
+
+    <div class="container">
+        <div class="logo">
+            <img src="img/labqy.png" alt="Muhamad Iqbal">
+        </div>
+        
+        <h1>Muhamad Iqbal</h1>
+        <p>Halaman Pranala Pribadi</p>
+
+        <a href="cv" class="menu" target="_blank">Curriculum Vitae</a>
+        <a href="port" class="menu" target="_blank">Portofolio</a>
+        <a href="https://quinime.my.id/" class="menu" target="_blank">Quinime Alpha v.3</a>
+        <a href="https://beta.quinime.my.id/" class="menu" target="_blank">Quinime Beta v.0.2</a>
+        <a href="https://radio.quinime.my.id/" class="menu" target="_blank">Quinime Radio v.1</a>
+        <a href="https://webmail.quinime.my.id/" class="menu" target="_blank">Quinime Mail</a>
+        <a href="https://ytta.quinime.my.id/" class="menu" target="_blank">Quinime YTTA</a>
+        <a href="https://dc.quinime.my.id/" class="menu" target="_blank">Discord Quinime</a>
+        <a href="https://link.quinime.my.id/" class="menu" target="_blank">Link Quinime</a>
+        <a href="https://nyawit.quinime.my.id/" class="menu" target="_blank">Circle Nyawit</a>
+        <a href="https://www.instagram.com/labqy_/" class="menu" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/labqy/" class="menu" target="_blank">Facebook</a>
+        <a href="https://x.com/@Labqy_" class="menu" target="_blank">X</a>
+        <a href="https://www.youtube.com/@Labqy_" class="menu" target="_blank">Youtube</a>
+        <a href="https://saweria.co/labqy" class="menu btn-donasi" target="_blank">Support / Donasi</a>
+    </div>
+
 </body>
 </html>
