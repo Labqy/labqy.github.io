@@ -1,1 +1,2 @@
-# halaman pranala pribadi
+# linkinbio
+halaman pranala pribadi
